@@ -60,7 +60,8 @@ body {
 }
 
 .five-stars-img {
-  width: 14rem;
+  width: 100%;
+  max-width: 13rem;
   padding-top: 2rem;
   padding-bottom: 1rem;
 }
@@ -85,8 +86,9 @@ body {
   padding-bottom: 0;
 }
 .calender-img {
+  width: 100%;
   margin-top: 1rem;
-  width: 17.5rem;
+  max-width: 17.5rem;
 }
 
 .schedule-posts-container {
@@ -104,7 +106,8 @@ body {
 }
 
 .schedule-posts-img {
-  width: 22rem;
+  width: 100%;
+  max-width: 20rem;
   margin: 1.5rem 0;
   padding: 0;
 }
@@ -113,13 +116,18 @@ body {
   background-color: var(--Purple-500);
   align-items: center;
   color: var(--White);
-  font-size: 2.9rem;
+  font-size: 2rem;
   line-height: 0.9;
   text-align: center;
 }
+
+.followers-grow-container p {
+  margin-top: 1rem;
+}
+
 .followers-grow-img {
-  width: 15rem;
-  margin-bottom: 2.5rem;
+  width: 100%;
+  max-width: 13rem;
 }
 
 .audience-grow-container {
@@ -137,7 +145,8 @@ body {
 }
 
 .audience-grow-img {
-  width: 14rem;
+  width: 100%;
+  max-width: 14rem;
   margin-top: 2rem;
 }
 
@@ -151,7 +160,8 @@ body {
   color: var(--Purple-500);
 }
 .create-post-img {
-  width: 15rem;
+  width: 100%;
+  max-width: 15rem;
   margin-top: 2rem;
 }
 
@@ -163,7 +173,7 @@ body {
 }
 
 .ai-content-img {
-  width: 15rem;
+  width: 100%;
   margin-top: 1.5rem;
 }
 
@@ -212,6 +222,8 @@ body {
   .followers-grow-container {
     grid-column: 3/5;
     grid-row: 4/5;
+    display: flex;
+    flex-direction: row;
   }
 
   .audience-grow-container {
@@ -220,6 +232,7 @@ body {
   }
 
   .create-post-container {
+    padding-top: 4rem;
     grid-column: 1/2;
     grid-row: 1/3;
   }
